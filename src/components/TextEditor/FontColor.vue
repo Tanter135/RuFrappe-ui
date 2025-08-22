@@ -7,7 +7,7 @@
     </template>
     <template #body-main>
       <div class="p-2">
-        <div class="text-sm text-ink-gray-7">Text Color</div>
+        <div class="text-sm text-ink-gray-7">Цвет текста</div>
         <div class="mt-1 grid grid-cols-8 gap-1">
           <Tooltip
             class="flex"
@@ -27,7 +27,7 @@
             </button>
           </Tooltip>
         </div>
-        <div class="mt-2 text-sm text-ink-gray-7">Background Color</div>
+        <div class="mt-2 text-sm text-ink-gray-7">Цвет фона</div>
         <div class="mt-1 grid grid-cols-8 gap-1">
           <Tooltip
             class="flex"
@@ -82,27 +82,27 @@ export default {
     foregroundColors() {
       // tailwind css colors, scale 600
       return [
-        { name: 'Default', hex: '#1F272E' },
-        { name: 'Yellow', hex: '#ca8a04' },
-        { name: 'Orange', hex: '#ea580c' },
-        { name: 'Red', hex: '#dc2626' },
-        { name: 'Green', hex: '#16a34a' },
-        { name: 'Blue', hex: '#1579D0' },
-        { name: 'Purple', hex: '#9333ea' },
-        { name: 'Pink', hex: '#db2777' },
+        { name: 'По умолчанию', hex: '#1F272E' },
+        { name: 'Желтый', hex: '#ca8a04' },
+        { name: 'Оранжевый', hex: '#ea580c' },
+        { name: 'Красный', hex: '#dc2626' },
+        { name: 'Зеленый', hex: '#16a34a' },
+        { name: 'Синий', hex: '#1579D0' },
+        { name: 'Фиолетовый', hex: '#9333ea' },
+        { name: 'Розовый', hex: '#db2777' },
       ]
     },
     backgroundColors() {
       // tailwind css colors, scale 100
       return [
-        { name: 'Default', hex: null },
-        { name: 'Yellow', hex: '#fef9c3' },
-        { name: 'Orange', hex: '#ffedd5' },
-        { name: 'Red', hex: '#fee2e2' },
-        { name: 'Green', hex: '#dcfce7' },
-        { name: 'Blue', hex: '#D3E9FC' },
-        { name: 'Purple', hex: '#f3e8ff' },
-        { name: 'Pink', hex: '#fce7f3' },
+        { name: 'По умолчанию', hex: null },
+        { name: 'Желтый', hex: '#fef9c3' },
+        { name: 'Оранжевый', hex: '#ffedd5' },
+        { name: 'Красный', hex: '#fee2e2' },
+        { name: 'Зеленый', hex: '#dcfce7' },
+        { name: 'Синий', hex: '#D3E9FC' },
+        { name: 'Фиолетовый', hex: '#f3e8ff' },
+        { name: 'Розовый', hex: '#fce7f3' },
       ]
     },
   },
