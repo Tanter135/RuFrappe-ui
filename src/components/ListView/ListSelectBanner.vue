@@ -54,7 +54,7 @@
               variant="ghost"
               @click="list.toggleAllRows(true)"
             >
-              Select all
+              Выбрать все
             </Button>
             <Button
               icon="x"
