@@ -1,7 +1,7 @@
 <template>
   <slot v-bind="{ onClick: openDialog }"></slot>
   <Dialog
-    :options="{ title: 'Add Image' }"
+    :options="{ title: 'Добавить изображение' }"
     v-model="addImageDialog.show"
     @after-leave="reset"
   >
@@ -16,7 +16,7 @@
           accept="image/*"
         />
         <span class="absolute inset-0 select-none px-2 py-1 text-base">
-          {{ addImageDialog.file ? 'Select another image' : 'Select an image' }}
+          {{ addImageDialog.file ? 'Выбрать другое изображение' : 'Выбрать изображение' }}
         </span>
       </label>
       <img
@@ -27,9 +27,9 @@
     </template>
     <template #actions>
       <Button variant="solid" @click="addImage(addImageDialog.url)">
-        Insert Image
+        Вставить изображение
       </Button>
-      <Button @click="reset"> Cancel </Button>
+      <Button @click="reset"> Отменить </Button>
     </template>
   </Dialog>
 </template>
