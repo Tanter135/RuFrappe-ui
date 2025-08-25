@@ -1,7 +1,7 @@
 <template>
   <slot v-bind="{ onClick: openDialog }"></slot>
   <Dialog
-    :options="{ title: 'Set Link' }"
+    :options="{ title: 'Вставить ссылку' }"
     v-model="setLinkDialog.show"
     @after-leave="reset"
   >
@@ -19,7 +19,7 @@
         @click="setLink(setLinkDialog.url)"
         class="w-full"
       >
-        Save
+        Сохранить
       </Button>
     </template>
   </Dialog>
