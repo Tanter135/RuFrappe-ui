@@ -19,7 +19,7 @@
       </Tooltip>
       <Tooltip text="Remove link" placement="top">
         <Button label="Remove link" @click="$emit('updateHref', '')">
-          <template #icon><LucideX class="size-4" /></template>
+          <template #icon><X class="size-4" /></template>
         </Button>
       </Tooltip>
     </div>
@@ -32,7 +32,7 @@ import Button from '../Button/Button.vue'
 import TextInput from '../TextInput.vue'
 import Tooltip from '../Tooltip/Tooltip.vue'
 import { Check } from 'lucide-react'
-import LucideX from '~icons/lucide/x'
+import { X } from 'lucide-react'
 import { isValidUrl } from '../../utils/url-validation'
 
 const props = defineProps<{
