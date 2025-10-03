@@ -59,6 +59,7 @@
     "feather-icons": "^4.28.0",
     "idb-keyval": "^6.2.0",
     "lowlight": "^3.3.0",
+    "lucide-react": "^0.544.0",
     "lucide-static": "^0.479.0",
     "ora": "5.4.1",
     "prettier": "^3.3.2",
