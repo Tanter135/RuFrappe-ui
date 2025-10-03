@@ -1,7 +1,7 @@
 <template>
   <slot v-bind="{ onClick: openDialog }"></slot>
   <Dialog
-    :options="{ title: 'Add Video' }"
+    :options="{ title: 'Добавить видео' }"
     v-model="addVideoDialog.show"
     @after-leave="reset"
   >
@@ -15,10 +15,10 @@
             <Button @click="openFileSelector">
               {{
                 uploading
-                  ? `Uploading ${progress}%`
+                  ? `Загрузка ${progress}%`
                   : addVideoDialog.url
-                    ? 'Change Video'
-                    : 'Upload Video'
+                    ? 'Сменить видео'
+                    : 'Загрузить видео'
               }}
             </Button>
             <Button
