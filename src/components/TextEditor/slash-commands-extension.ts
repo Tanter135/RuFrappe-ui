@@ -6,17 +6,8 @@ import tippy, { Instance as TippyInstance, Props as TippyProps } from 'tippy.js'
 import SlashCommandsList from './SlashCommandsList.vue'
 import { Component } from 'vue'
 
-import Heading2 from '~icons/lucide/heading-2'
-import Heading3 from '~icons/lucide/heading-3'
-import List from '~icons/lucide/list'
-import ListOrdered from '~icons/lucide/list-ordered'
-import Code from '~icons/lucide/code'
-import Quote from '~icons/lucide/quote'
-import Image from '~icons/lucide/image'
-import Video from '~icons/lucide/video'
-import Link from '~icons/lucide/link'
-import Minus from '~icons/lucide/minus'
-import Table from '~icons/lucide/table-2'
+import { Heading2, Heading3, List, ListOrdered, Code, Quote, Image, Video, Link, Minus, Table } from 'lucide-react'
+
 
 export const SlashCommandSuggestionKey = new PluginKey<any>(
   'slashCommandSuggestion',
