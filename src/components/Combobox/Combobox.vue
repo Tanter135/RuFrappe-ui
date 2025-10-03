@@ -22,9 +22,7 @@ import {
   ComboboxTrigger,
   ComboboxViewport,
 } from 'reka-ui'
-import LucideCheck from '~icons/lucide/check'
-import LucideChevronDown from '~icons/lucide/chevron-down'
-
+import { Check, ChevronDown } from 'lucide-react'
 type SimpleOption =
   | string
   | {
@@ -222,7 +220,7 @@ const handleOpenChange = (open: boolean) => {
         />
       </div>
       <ComboboxTrigger :disabled="disabled">
-        <LucideChevronDown class="h-4 w-4 text-ink-gray-5" />
+        <ChevronDown class="h-4 w-4 text-ink-gray-5" />
       </ComboboxTrigger>
     </ComboboxAnchor>
     <ComboboxPortal>
@@ -267,7 +265,7 @@ const handleOpenChange = (open: boolean) => {
                 <ComboboxItemIndicator
                   class="inline-flex ml-2 items-center justify-center"
                 >
-                  <LucideCheck class="size-4" />
+                  <Check class="size-4" />
                 </ComboboxItemIndicator>
               </ComboboxItem>
             </ComboboxGroup>
@@ -289,7 +287,7 @@ const handleOpenChange = (open: boolean) => {
               <ComboboxItemIndicator
                 class="absolute right-0 w-6 inline-flex items-center justify-center"
               >
-                <LucideCheck class="h-4 w-4" />
+                <Check class="h-4 w-4" />
               </ComboboxItemIndicator>
             </ComboboxItem>
           </template>
