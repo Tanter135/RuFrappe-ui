@@ -14,7 +14,7 @@
     <div class="shrink-0 flex items-center gap-2">
       <Tooltip text="Submit" placement="top">
         <Button label="Submit" @click="submitLink">
-          <template #icon><LucideCheck class="size-4" /></template>
+          <template #icon><Check class="size-4" /></template>
         </Button>
       </Tooltip>
       <Tooltip text="Remove link" placement="top">
@@ -31,7 +31,7 @@ import { onMounted, ref, useTemplateRef, nextTick } from 'vue'
 import Button from '../Button/Button.vue'
 import TextInput from '../TextInput.vue'
 import Tooltip from '../Tooltip/Tooltip.vue'
-import LucideCheck from '~icons/lucide/check'
+import { Check } from 'lucide-react'
 import LucideX from '~icons/lucide/x'
 import { isValidUrl } from '../../utils/url-validation'
 
