@@ -3,10 +3,9 @@ import { ref, onMounted } from 'vue'
 import { NodeViewWrapper, nodeViewProps } from '@tiptap/vue-3'
 import LoadingIndicator from '../../../LoadingIndicator.vue'
 import ErrorMessage from '../../../ErrorMessage.vue'
-import LucideMoveDiagonal2 from '~icons/lucide/move-diagonal-2'
-import LucideAlignLeft from '~icons/lucide/align-left'
-import LucideAlignCenter from '~icons/lucide/align-center'
-import LucideAlignRight from '~icons/lucide/align-right'
+
+import { MoveDiagonal2, AlignLeft, AlignCenter, AlignRight } from 'lucide-react'
+
 
 const props = defineProps(nodeViewProps)
 
@@ -193,7 +192,7 @@ function setAlignment(align: 'left' | 'center' | 'right') {
                   : 'text-ink-gray-4',
               ]"
             >
-              <LucideAlignLeft class="size-4" />
+              <AlignLeft class="size-4" />
             </button>
             <button
               @click.stop="setAlignment('center')"
@@ -204,7 +203,7 @@ function setAlignment(align: 'left' | 'center' | 'right') {
                   : 'text-ink-gray-4',
               ]"
             >
-              <LucideAlignCenter class="size-4" />
+              <AlignCenter class="size-4" />
             </button>
             <button
               @click.stop="setAlignment('right')"
@@ -215,7 +214,7 @@ function setAlignment(align: 'left' | 'center' | 'right') {
                   : 'text-ink-gray-4',
               ]"
             >
-              <LucideAlignRight class="size-4" />
+              <AlignRight class="size-4" />
             </button>
           </div>
 
@@ -225,7 +224,7 @@ function setAlignment(align: 'left' | 'center' | 'right') {
             class="cursor-nw-resize bg-black/65 rounded p-1"
             @mousedown.prevent="startResize"
           >
-            <LucideMoveDiagonal2 class="text-white size-4" />
+            <MoveDiagonal2 class="text-white size-4" />
           </button>
         </div>
 
