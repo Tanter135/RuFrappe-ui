@@ -6,7 +6,7 @@
         contenteditable="false"
         v-model="selectedLanguage"
       >
-        <option :value="null">auto</option>
+        <option :value="null">авто</option>
         <option disabled>—</option>
         <option
           v-for="(language, index) in languages"

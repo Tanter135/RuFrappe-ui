@@ -6,7 +6,6 @@
       ref="input"
       type="text"
       class="w-full"
-      placeholder="https://example.com"
       v-model="_href"
       @keydown.enter="submitLink"
       @keydown.esc="$emit('close')"
