@@ -91,7 +91,7 @@ let _options = computed(() => {
     showTooltip: defaultTrue(props.options.showTooltip),
     selectionText:
       props.options.selectionText ||
-      ((val) => (val === 1 ? '1 row selected' : `${val} rows selected`)),
+      ((val) => (val === 1 ? '1 строка выбрана' : `${val} строк выбрано`)),
     enableActive: defaultFalse(props.options.enableActive),
     selectable: defaultTrue(props.options.selectable),
     resizeColumn: defaultFalse(props.options.resizeColumn),
